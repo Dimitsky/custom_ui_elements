@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Custom UI elements</title>
 </head>
 <body>
-    
+    <section class="section">
+        <div class="container section__container">
+            <form class="section__form form-section">
+                <fieldset class="form-section__checkbox checkbox-form-section">
+                    <legend class="checkbox-form-section__modern">
+                        Кастомные чекбоксы (современный метод)
+                    </legend>
+                    <label class="label check-modern">
+                        <input class="input check-modern__input" type="checkbox" name="check-one" value="one">
+                        <span class="check-modern__box"></span>
+                        Unchecked
+                    </label>
+                    <label class="label check-modern">
+                        <input class="input check-modern__input" type="checkbox" name="check-one" value="two" checked>
+                        <span class="check-modern__box"></span>
+                        Checked
+                    </label>
+                    <label class="label check-modern">
+                        <input class="input check-modern__input" type="checkbox" name="check-one" value="three" disabled>
+                        <span class="check-modern__box"></span>
+                        Disabled
+                    </label>
+                    <label class="label check-modern">
+                        <input class="input check-modern__input" type="checkbox" name="check-one" value="four" disabled checked>
+                        <span class="check-modern__box"></span>
+                        Disabled checked
+                    </label>
+                </fieldset>
+            </form>
+        </div>
+    </section>
 </body>
 </html>

@@ -1,0 +1,72 @@
+:root {
+    box-sizing: border-box;
+    font: 400 18px/1.5 sans-serif;
+}
+
+*, 
+::before, 
+::after {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.label {
+    display: block;
+}
+
+/* 
+
+========== checkbox
+
+*/
+
+/* checkbox-modern */
+
+.check-modern {
+    padding-left: 1.2em;
+}
+
+input.check-modern__input {
+    position: absolute;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+}
+
+.check-modern__box {
+    position: absolute;
+    border-radius: 0.02em;
+    margin-top: 0.4em;
+    margin-left: -1em;
+    width: 0.6em;
+    height: 0.6em;
+    background: #fff no-repeat center / 90%;
+    box-shadow: 0 0 0 0.1em rgb(54, 142, 224);
+}
+
+.check-modern__input:checked + .check-modern__box {
+    box-shadow: 0 0 0 0.1em rgb(54, 142, 224);
+    background-image: url('../img/check-svgrepo-com.svg');
+    background-color: rgb(54, 142, 224);
+}
+
+.check-modern__input:disabled + .check-modern__box {
+    box-shadow: 0 0 0 0.1em rgb(220, 220, 220);
+}
+
+.check-modern__input:checked:disabled +.check-modern__box {
+    background-color: rgb(220, 220, 220);
+}
+
+.check-modern__input:focus + .check-modern__box {
+    box-shadow: 0 0 0 0.1em rgb(59, 224, 3);
+}
